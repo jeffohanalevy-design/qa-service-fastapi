@@ -12,7 +12,7 @@ Example questions:
 
 ---
 
-## Local Setup
+## Local Setup (Service Deployment)
 
 Dowmload the files in your Desktop
 Open your Terminal and change the directory to Desktop
