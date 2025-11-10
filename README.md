@@ -20,11 +20,7 @@ Example questions:
 
 - `pip install -r requirements.txt` on your Terminal 
 
-- Run the server locally on your terminal as below:
+- Run the server locally on your terminal as follow: `uvicorn main:app --reload --port 8080`
 
-`uvicorn main:app --reload --port 8080`
-
-- Then open:
-
-`http://127.0.0.1:8080/docs` to try out and ask questions to the system obtaining an answer
+- Then open: `http://127.0.0.1:8080/docs` to try out and ask questions to the system obtaining an answer
 
