@@ -28,6 +28,8 @@ Example questions that trigger no answer (the algorithm does not find relevant m
 - "How many cars does Vikram Desai have?"
 - "What are Amira’s favorite restaurants?"
 
+short screen recording demonstrating example queries: https://drive.google.com/file/d/1XSH9AYqvu99zktEj5uGAi6XFMvYfZmwu/view?usp=sharing
+
 ---
 
 ## Bonus 1: Design Notes
