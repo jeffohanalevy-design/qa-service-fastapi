@@ -14,7 +14,7 @@ Example questions:
 
 ## Local Setup (Service Deployment)
 
-- Dowmload the files in your Desktop
+- Dowmload the files (main.py and requirements.txt) in your Desktop
 
 - Open your Terminal and change the directory to Desktop
 
