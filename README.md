@@ -29,9 +29,16 @@ Example questions:
 ## Bonus 1: Design Notes
 
 The algorithm design in main.py is the following:
-- Load data from the API and compute the messages' embedding using SentenceTransformer("all-MiniLM-L6-v2")
+- Load data from the public API of the company and compute the messages' embedding using SentenceTransformer("all-MiniLM-L6-v2")
 - Receive question from user 
 - Detect if a username or part of it is present in the question; will fetch only messages corresponding to the username in the question; if no username is mentionned, will fetch all messages
-- Handle "simple" questions: if no topic is mentionned like “What did Layla say?”; The algorithm directly summarizes the user’s recent messages
-- 
+- Handle "simple" questions: if no topic is mentionned like "What did Layla say?"; The algorithm directly summarizes the user’s recent messages
+- Semantic Search (if topic-based question): select top 3 messages based on cosine simmilarity between the messages and the question
+- Summarize the top 3 messages into an answer and mention the timestamp only if it is a date related question
+
+So this algorithm uses SentenceTransformer("all-MiniLM-L6-v2") to create the embeddings for both the question and messaages and compare them to checked for similarities. Initially, Instead of the embeddings comparaison, I used a  very basic keyword search logic: Looks for messages containing a name mentioned in the question, then returns message content as the answer. I realized that the answers were way out of the question's scope. Then, I switched to the embeddings and the answers were making more sense. 
+
+Initially I also left over the timestamp from the data to consider in the answers. But I ended up realizing that it would be useful to insert the date a message was sent if the question is time related. For instance, if the question is "when is Leyla travelling?", then a possible answer comes from the message "book me a flight for tomorrow" where the timestamp would be relevant to answer when Leyla is travelling. 
+
+
 
