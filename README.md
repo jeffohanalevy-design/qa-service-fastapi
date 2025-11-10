@@ -5,11 +5,6 @@
 
 A simple Question Answering API that answers natural-language questions about member messages retrieved from a public API.
 
-Example questions:
-- “When is Layla planning her trip to London?”
-- “How many cars does Vikram Desai have?”
-- “What are Amira’s favorite restaurants?”
-
 ---
 
 ## Local Setup (Service Deployment)
@@ -23,6 +18,15 @@ Example questions:
 - Run the server locally on your terminal as follow: `uvicorn main:app --reload --port 8080`
 
 - Then open on your browser: `http://127.0.0.1:8080/docs` to try out and ask questions to the system obtaining an answer
+
+Example questions that trigger an answer:
+- "When is Sofia intending to book a private jet?"
+- "What kind of seats does Leyla want for her flight?"
+
+Example questions that trigger no answer (the algorithm does not find relevant messages):
+- "When is Layla planning her trip to London?"
+- "How many cars does Vikram Desai have?"
+- "What are Amira’s favorite restaurants?"
 
 ---
 
