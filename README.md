@@ -44,5 +44,8 @@ So this algorithm uses SentenceTransformer("all-MiniLM-L6-v2") to create the emb
 
 Initially I also left over the timestamp from the data to consider in the answers. But I ended up realizing that it would be useful to insert the date a message was sent if the question is time related. For instance, if the question is "when is Leyla travelling?", then a possible answer comes from the message "book me a flight for tomorrow" where the timestamp would be relevant to answer when Leyla is travelling. 
 
+## Bonus 2: Data Insights 
+
+The data is very coherent and structured. It is easy to access the usernames, timestamps, and messages with the JSON library in Python. There are no inconsistencies or missing data. 
 
 
