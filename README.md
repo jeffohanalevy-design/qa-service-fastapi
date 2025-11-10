@@ -19,7 +19,7 @@ Open your Terminal and change the directory to Desktop
 
 `pip install -r requirements.txt` on your Terminal 
 
-Run the server locally:
+Run the server locally on your terminal:
 
 `uvicorn main:app --reload --port 8080`
 
