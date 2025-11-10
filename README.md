@@ -25,4 +25,5 @@ Run the server locally:
 
 Then open:
 
-`http://127.0.0.1:8080/docs`
+`http://127.0.0.1:8080/docs` to try out and ask questions to the system obtaining an answer
+
