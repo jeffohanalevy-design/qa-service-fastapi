@@ -14,17 +14,17 @@ Example questions:
 
 ## Local Setup (Service Deployment)
 
-Dowmload the files in your Desktop
+- Dowmload the files in your Desktop
 
-Open your Terminal and change the directory to Desktop
+- Open your Terminal and change the directory to Desktop
 
-`pip install -r requirements.txt` on your Terminal 
+- `pip install -r requirements.txt` on your Terminal 
 
-Run the server locally on your terminal:
+- Run the server locally on your terminal as below:
 
 `uvicorn main:app --reload --port 8080`
 
-Then open:
+- Then open:
 
 `http://127.0.0.1:8080/docs` to try out and ask questions to the system obtaining an answer
 
