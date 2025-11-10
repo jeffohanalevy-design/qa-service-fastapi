@@ -66,6 +66,7 @@ summarize recent msgs           compute embeddings
                    Return natural answer JSON
 
 
+
 So this algorithm uses SentenceTransformer("all-MiniLM-L6-v2") to create the embeddings for both the question and messages and compare them to check for similarities. Initially, Instead of the embeddings comparaison, I used a very basic keyword search logic: Looks for messages containing a name mentioned in the question, then returns message content as the answer. I realized that the answers were way out of the question's scope. Then, I switched to the embeddings and the answers were making more sense. 
 
 Initially I also left over the timestamp from the data to consider in the answers. But I ended up realizing that it would be useful to insert the date a message was sent if the question is time related. For instance, if the question is "when is Leyla travelling?", then a possible answer comes from the message "book me a flight for tomorrow" where the timestamp would be relevant to answer when Leyla is travelling. 
