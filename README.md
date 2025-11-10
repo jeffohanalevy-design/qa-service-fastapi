@@ -16,6 +16,7 @@ Example questions:
 
 Dowmload the files in your Desktop
 Open your Terminal and change the directory to Desktop
+
 `pip install -r requirements.txt` on your Terminal 
 
 Run the server locally:
