@@ -38,7 +38,6 @@ The algorithm design in main.py is the following:
 - Load data from the public API of the company and compute the messages' embedding using SentenceTransformer("all-MiniLM-L6-v2")
 - Receive question from user 
 - Detect if a username or part of it is present in the question; will fetch only messages corresponding to the username in the question; if no username is mentionned, will fetch all messages
-- Handle "simple" questions: if no topic is mentionned like "What did Layla say?"; The algorithm directly summarizes the user’s recent messages
 - Semantic Search (if topic-based question): select top 3 messages based on cosine simmilarity between the messages and the question
 - Summarize the top 3 messages into an answer and mention the timestamp only if it is a date related question
 
