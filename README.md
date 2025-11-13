@@ -22,6 +22,7 @@ A simple Question Answering API that answers natural-language questions about me
 Example questions that trigger an answer:
 - "When is Sofia intending to book a private jet?"
 - "What kind of seats does Layla want for her flight?"
+- "what does Armand Dupont need tickets for ?"
 
 Example questions that trigger no answer (the algorithm does not find relevant messages):
 - "When is Layla planning her trip to London?"
