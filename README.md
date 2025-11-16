@@ -39,8 +39,8 @@ The algorithm design in main.py is the following:
 - Load data from the public API of the company and compute the messages' embedding using SentenceTransformer("all-MiniLM-L6-v2")
 - Receive question from user 
 - Detect if a username or part of it is present in the question; will fetch only messages corresponding to the username in the question; if no username is mentionned, will fetch all messages
-- Semantic Search (if topic-based question): select top 3 messages based on cosine simmilarity between the messages and the question
-- Summarize the top 3 messages into an answer and mention the timestamp only if it is a date related question
+- Semantic Search (if topic-based question): select top message based on cosine simmilarity between the messages and the question
+- Summarize the message into an answer and mention the timestamp only if it is a date related question
 
 So this algorithm uses SentenceTransformer("all-MiniLM-L6-v2") to create the embeddings for both the question and messages and compare them to check for similarities. Initially, Instead of the embeddings comparaison, I used a very basic keyword search logic: Looks for messages containing a name mentioned in the question, then returns message content as the answer. I realized that the answers were way out of the question's scope. Then, I switched to the embeddings and the answers were making more sense. 
 
